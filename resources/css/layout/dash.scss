@@ -1,0 +1,136 @@
+.dash-layout {
+    display:  flex;
+    height: 100%;
+
+
+    > * {
+        padding: 20px;
+        padding-top: 30px;
+    }
+
+    .list-btn-toggle {
+        background-color: rgba($color: $color_b , $alpha: 0.2);
+        padding: 10px;
+        display: none;
+        border-radius: 14px;
+        cursor: pointer;
+        border: none;
+        font-size: 23px;
+        // margin: 10px 0;
+        margin-bottom: 10px;
+
+        color: $color_b;
+
+        &:not(.list .list-btn-toggle) {
+            background-color: rgba($color: $color_a , $alpha: 0.2);
+            color: $color_a;
+        }
+        i {
+            display: block;
+        }
+    }
+
+    > .list {
+        width: 260px;
+        // padding:  10px;
+        background-color: $color_a;
+        color: $color_a;
+        z-index: 1;
+
+
+
+        .logo {
+            width: 85%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .content {
+            margin-top: 35px;
+
+            .dashboard-menu {
+                background-color: transparent;
+                border: 0;
+                font-size: 19px;
+                // color: #fff;
+                .p-menu-item-content {
+                    color:  $color_b_lite;
+
+
+                    .active {
+                        color: $color_b;
+                        background-color:$color_b_extra_lite;
+                        border-radius: 16px;
+                    }
+                }
+                .p-menu-item-icon {
+                    color:  $color_white_a;
+                }
+                .p-menu-item:not(.p-disabled) .p-menu-item-content:hover {
+                    background: none;
+
+                    .p-menu-item-icon {
+                        color: $color_white_a;
+                    }
+                }
+                .p-menu-item.p-focus .p-menu-item-content {
+                    background: none;
+                }
+
+            }
+        }
+    }
+
+    > .content {
+        padding: 20px 50px;
+        color: $color_c;
+        background-color: $background;
+        overflow: auto;
+        padding-top: 30px;
+        width: calc(100% - 260px);
+
+        a {
+            color: $color_a;
+        }
+
+        .p-breadcrumb {
+            background: none;
+
+            .p-breadcrumb-item-link , .p-breadcrumb-separator{
+                color: $color_c;
+            }
+        }
+
+
+
+        .top {
+            > * {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .listUser {
+                float: left;
+
+
+            }
+        }
+
+        .panel {
+            width: 60%;
+        }
+    }
+
+
+
+}
+.munuUser {
+
+    .p-menu-submenu-label {
+        color: $color_c !important;
+    }
+
+    .p-menu-item-link {
+        color: $color_a !important;
+    }
+}

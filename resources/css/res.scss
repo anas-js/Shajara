@@ -1,0 +1,28 @@
+// Responsive Design File
+@media (max-width: 520px) {
+  .link {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .link {
+    width: 90%;
+  }
+}
+
+@media (max-height: 360px) {
+  .main {
+    position: static;
+    > div:first-of-type {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-height: 210px) {
+  .link {
+    transform: translate(-50%, -0%);
+    top: 20px;
+  }
+}

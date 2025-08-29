@@ -1,0 +1,21 @@
+@media (max-width: 750px) {
+    .dash-layout {
+        .list-btn-toggle {
+            display: block;
+        }
+        > {
+            .list {
+                position: fixed;
+                height: 100%;
+                // right: 100%;
+                transform: translateX(100%);
+            }
+            .content {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+

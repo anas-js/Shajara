@@ -1,0 +1,31 @@
+// $color_a : #64CCC5;
+// $color_b : #507687;
+// $color_c : #a1cbc8;
+
+$color_a : #34656D;
+$color_b : #C6FFC1;
+$color_c : #334443;
+$color_d : #FFFBDF;
+
+
+$color_white_a:#fff;
+$color_white_c: #f1f1f1;
+
+$color_a_lite : rgba($color: $color_a, $alpha: 0.1);
+
+// $color_b_lite : rgba($color: $color_b, $alpha: 0.1);
+$color_b_lite : mix($color_b,$color_white_a, 30%);
+$color_b_extra_lite : rgba($color: $color_b, $alpha: 0.30);
+
+$background: mix($color_b_extra_lite,$color_white_a, 10%);
+
+
+
+// $color_a_extra_lite : mix($color_a,$color_white_a, 7%);
+
+
+
+$color_black_a : #000;
+
+
+

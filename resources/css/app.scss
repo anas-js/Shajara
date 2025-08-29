@@ -1,0 +1,42 @@
+/* @import 'remixicon/fonts/remixicon.css'; */
+@import 'colors.scss';
+* {
+    font-family: "IBM Plex Sans Arabic","Outfit";
+    font-weight: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    direction: rtl;
+    height: 100%;
+
+}
+
+#app {
+    height: 100%;
+}
+
+
+
+.p-datatable-mask {
+    // color: $color_a !important;
+    background-color: rgba($color: $color_a, $alpha: 0.5) !important;
+
+}
+
+.small-panel {
+    width: 60%;
+}
+.p-colorpicker input {
+    border:  1px solid $color_a;
+}
+
+
+
+@import 'layout/dash.scss';
+
+@import 'res/layout/dash.scss';
+@import 'res/layout/app.scss';
+// @import 'global.scss';
